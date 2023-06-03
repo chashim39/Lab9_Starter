@@ -102,6 +102,24 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    errorBtns[0].addEventListener('click', () => {
+      console.log("Console Log Demo");
+    });
+    errorBtns[1].addEventListener('click', () => {
+      console.error("Console Error: Demo");
+    });
+    errorBtns[2].addEventListener('click', () => {
+      console.count("Console Count");
+    });
+    errorBtns[3].addEventListener('click', () => {
+      console.warn("Console Warn Demo");
+    });
+    let x = 2 + 2;
+    let y = "fish";
+    let reason = "2 + 2 is expected to be 4";
+    errorBtns[4].addEventListener('click', () => {
+      console.assert(x == y, {x, y, reason});
+    });
   </script>
 </body>
 
